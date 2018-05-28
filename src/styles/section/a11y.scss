@@ -1,0 +1,51 @@
+section#a11y {
+    h2 {
+        position: relative;
+    }
+    h2.accessibility {
+        .a, .y { display: inline-block !important; }
+        .eleven {
+            opacity: 0;
+            display: none;
+            letter-spacing: 0;
+            transform: translateX(0) translateY(24px);
+        }
+        span {
+            transition: 250ms cubic-bezier(0.215, 0.610, 0.355, 1) all;
+        }
+    }
+
+    h2.accessibility.animating {
+        letter-spacing: 2px;
+        .eleven {
+            position: absolute;
+            opacity: 1;
+            display: inline-block;
+            letter-spacing: 12px;
+            transform: translateX(24px) translateY(0);
+        }
+        .middle {
+            opacity: 0;
+        }
+        .y { 
+            text-transform: uppercase;
+            transform: translateX(-24px);
+        }
+    }
+
+    h2.accessibility.animated {
+        .middle {
+            display: none;
+        }
+        .eleven {
+            opacity: 1;
+            display: inline-block;
+            letter-spacing: 0;
+            transform: translateX(0);
+        }
+        .y {
+            text-transform: uppercase;
+            transform: translateX(0);
+        }
+    }
+}

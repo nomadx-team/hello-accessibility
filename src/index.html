@@ -1,16 +1,95 @@
 <html>
   <head>
     
-    <title> Github Pages Template </title>
+    <title> Hello Accessibility </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
     
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   
   <body>
 
     <main>
-      <h1>Hello world!</h1>
+      <section id="intro">
+        <h1>Hello Accessibility!</h1>
+        <p>brought to you by Nomadx</p>
+  
+        <p>Accessibility on the web should be more than just a niche specialty. Accessibility should be woven into the fabric of the sites and tools that we build, not treated as an afterthought that can be addressed if there's enough time.</p>
+        <p>We'll walk you through some easy ways to make your website more accessible. But first...</p>
+
+        <p>What is <a href="/#a11y">A11Y</a>?</p>
+      </section>
+
+      <section id="a11y">
+        <h2 class="accessibility">
+          <span class="a">A</span><span class="eleven">11</span><span class="middle c">c</span><span class="middle c">c</span><span class="middle e">e</span><span class="middle s">s</span><span class="middle s">s</span><span class="middle i">i</span><span class="middle b">b</span><span class="middle i">i</span><span class="middle l">l</span><span class="middle i">i</span><span class="middle t">t</span><span class="y">y</span>
+        </h2>
+        <p> <span>A11Y</span> is a numeronym for the term "accessibility". The first and last letters remain, and the number of letters removed replaces them.</p>
+        <button id="animate-numeronym">Check it out</button>
+        <p>You may be familiar with similar web-related numeronyms such as I18N (internationalization) and W3C (World Wide Web Consortium).</p>
+
+        <p>Neat. <a href="/#markup">Let's dive in.</a></p>
+      </section>
+
+      <section id="modes">
+        <h2>Considering Different Modes</h2>
+        <p>When considering the accessibility of your project, it may be useful to consider a few different scenarios.</p>
+        <ul>
+          <li>Navigation via Assistive Technology, such as a screen reader</li>
+          <l1>Navigation via Keyboard alone</l1>
+        </ul>
+      </section>
+
+      <section id="markup">
+        <h2>Markup</h2>
+        <p>One of the simplest ways to improve the accessibilty of your site is to use the correct, semantic HTML5 elements.</p>
+        <p>Users of assistive technology will be able to navigate your site more easily, because these elements come pre-baked with some important metadata about what kind of content they contain.</p>
+
+        <h3>Important Elements</h3>
+        <ul>
+          <li><code> header&gt; </code></li>
+          <li><code> &lt;nav&gt; </code></li>
+          <li><code> &lt;main&gt; </code></li>
+          <li><code> &lt;article&gt; </code></li>
+          <li><code> &lt;aside&gt; </code></li>
+          <li><code> &lt;footer&gt; </code></li>
+          <li><code> &lt;form&gt; </code></li>
+        </ul>
+
+        <p></p>
+      </section>
+
+      <section id="aria">
+        <h2>ARIA</h2>
+        <blockquote>
+          <p>ARIA is a set of special accessibility attributes which can be added to any markup, but is especially suited to HTML.</p>
+          <p>&ndash; <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">MDN web docs / ARIA</a></p>
+        </blockquote>
+        <p>Accessible Rich Internet Applications</p>
+
+        <p>Screen reader examples</p>
+      </section>
+
+      <section id="focus">
+        <h2>Focus</h2>
+        <p>Your project should be navigable by keyboard alone. If there are fancy mouse interactions, such as swiping left or right, consider adding support for keyboard users by enabling the same results with the left and right arrow keys.</p>
+
+        <p>Roving focus in widgets.</p>
+        
+        <p><code>tabindex="0"</code> will allow the element to be tabbed into focus within the normal document flow.</p>
+        <p><code>tabindex="-1"</code> will allow the element to be programmatically focused.</p>
+        <p>One should never use a <code>tabindex</code> value greater than 0, because it will cause focus to unexpectedly jump around the webpage.</p>
+      </section>
+      
+      <section id="images">
+        <h2>Images</h2>
+        <p>Providing <code>alt</code> text on <code>&lt;img/&gt;</code> elements is very easy to do, but often overlooked.</p>
+        <p><code>alt</code> text is there to assist any users that are unable to see the image, whether they are using assistive technology or are simply saving data by not loading images.</p>
+
+        <p>Examples go here...</p>
+      </section>
+
     </main>
       
     <script src="./scripts/main.ts"></script>
